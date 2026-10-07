@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+:root,
+[data-theme="dark"] {
+  --bg-primary: #020617; /* slate-950 deep canvas */
+  --bg-surface: #0f172a; /* slate-900 surface */
+  --bg-elevated: #1e293b; /* slate-800 elevated */
+  --bg-card: rgba(15, 23, 42, 0.75);
+  --bg-card-hover: rgba(30, 41, 59, 0.75);
+
+  --border-subtle: #1e293b; /* slate-800 */
+  --border-strong: #334155; /* slate-700 */
+  --border-accent: rgba(168, 85, 247, 0.35); /* purple-500/35 */
+
+  --text-primary: #f8fafc; /* slate-50 */
+  --text-secondary: #94a3b8; /* slate-400 */
+  --text-muted: #64748b; /* slate-500 */
+
+  --accent-primary: #9333ea; /* purple-600 */
+  --accent-purple: #9333ea;
+  --accent-purple-light: #c084fc;
+  --accent-purple-bg: rgba(147, 51, 234, 0.15);
+
+  --success: #10b981;
+  --success-bg: rgba(16, 185, 129, 0.15);
+  --warning: #f59e0b;
+  --warning-bg: rgba(245, 158, 11, 0.15);
+  --danger: #f43f5e;
+  --danger-bg: rgba(244, 63, 94, 0.15);
+
+  --risk-high: #f43f5e;
+  --risk-medium: #f59e0b;
+  --risk-low: #10b981;
+
+  --graph-bg: #020617;
+  --graph-node-text: #e2e8f0;
+  --graph-node-border: #1e1b4b;
+  --graph-link-default: rgba(100, 116, 139, 0.35);
+  --graph-link-prereq: rgba(168, 85, 247, 0.55);
+  --graph-link-part: rgba(56, 189, 248, 0.55);
+  --graph-link-highlight: #c084fc;
+  --graph-link-dimmed: rgba(51, 65, 85, 0.2);
+
+  --chart-grid: #334155;
+  --chart-axis: #64748b;
+  --chart-tooltip-bg: #0f172a;
+  --chart-tooltip-border: rgba(168, 85, 247, 0.4);
+}
+
+[data-theme="light"] {
+  --bg-primary: #f8fafc; /* slate-50 light page background */
+  --bg-surface: #ffffff; /* white card / panel surface */
+  --bg-elevated: #f1f5f9; /* slate-100 elevated controls */
+  --bg-card: rgba(255, 255, 255, 0.95);
+  --bg-card-hover: #f1f5f9;
+
+  --border-subtle: #e2e8f0; /* slate-200 */
+  --border-strong: #cbd5e1; /* slate-300 */
+  --border-accent: rgba(126, 34, 206, 0.35); /* purple-700/35 */
+
+  --text-primary: #0f172a; /* slate-900 WCAG AA high contrast text */
+  --text-secondary: #475569; /* slate-600 */
+  --text-muted: #64748b; /* slate-500 */
+
+  --accent-primary: #7e22ce; /* purple-700 for accessible contrast on light */
+  --accent-purple: #7e22ce;
+  --accent-purple-light: #9333ea;
+  --accent-purple-bg: rgba(126, 34, 206, 0.1);
+
+  --success: #059669; /* emerald-600 for contrast */
+  --success-bg: rgba(5, 150, 105, 0.1);
+  --warning: #d97706; /* amber-600 */
+  --warning-bg: rgba(217, 119, 6, 0.1);
+  --danger: #e11d48; /* rose-600 */
+  --danger-bg: rgba(225, 29, 72, 0.1);
+
+  --risk-high: #e11d48;
+  --risk-medium: #d97706;
+  --risk-low: #059669;
+
+  --graph-bg: #ffffff;
+  --graph-node-text: #0f172a;
+  --graph-node-border: #cbd5e1;
+  --graph-link-default: rgba(148, 163, 184, 0.6);
+  --graph-link-prereq: rgba(126, 34, 206, 0.7);
+  --graph-link-part: rgba(2, 132, 199, 0.7);
+  --graph-link-highlight: #7e22ce;
+  --graph-link-dimmed: rgba(203, 213, 225, 0.4);
+
+  --chart-grid: #e2e8f0;
+  --chart-axis: #64748b;
+  --chart-tooltip-bg: #ffffff;
+  --chart-tooltip-border: rgba(126, 34, 206, 0.4);
+
+  /* Fallback aliases for any remaining slate references so everything turns light */
+  --color-slate-950: #f8fafc;
+  --color-slate-900: #ffffff;
+  --color-slate-800: #e2e8f0;
+  --color-slate-700: #cbd5e1;
+  --color-slate-600: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-400: #475569;
+  --color-slate-300: #334155;
+  --color-slate-200: #1e293b;
+  --color-slate-100: #0f172a;
+  --color-slate-50: #020617;
+}
+
+@theme {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-bg-card: var(--bg-card);
+  --color-bg-card-hover: var(--bg-card-hover);
+
+  --color-border-subtle: var(--border-subtle);
+  --color-border-strong: var(--border-strong);
+  --color-border-accent: var(--border-accent);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-purple: var(--accent-purple);
+  --color-accent-purple-light: var(--accent-purple-light);
+  --color-accent-purple-bg: var(--accent-purple-bg);
+
+  --color-success: var(--success);
+  --color-success-bg: var(--success-bg);
+  --color-warning: var(--warning);
+  --color-warning-bg: var(--warning-bg);
+  --color-danger: var(--danger);
+  --color-danger-bg: var(--danger-bg);
+
+  --color-risk-high: var(--risk-high);
+  --color-risk-medium: var(--risk-medium);
+  --color-risk-low: var(--risk-low);
+
+  --color-graph-bg: var(--graph-bg);
+  --color-chart-grid: var(--chart-grid);
+  --color-chart-axis: var(--chart-axis);
+  --color-chart-tooltip-bg: var(--chart-tooltip-bg);
+  --color-chart-tooltip-border: var(--chart-tooltip-border);
+}
+
+/* Smooth transition when switching themes */
+html,
+body,
+aside,
+header,
+main,
+nav,
+div,
+section,
+button,
+input,
+textarea,
+select {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 180ms;
+}
+
+/* Custom Scrollbar for both themes */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+

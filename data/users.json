@@ -1,0 +1,31 @@
+[
+  {
+    "id": "demo-user-1",
+    "email": "demo@mindgraph.ai",
+    "name": "Alex Mercer (AI Researcher)",
+    "password_hash": "$2b$10$SdJRIdR4krnmCjYgCZSNX.rTz3PtHnsmdTCK1yaHaGf0a8kYz4H16",
+    "email_verified": true,
+    "token_version": 3,
+    "created_at": "2026-09-01T00:00:00.000Z",
+    "theme_preference": "light"
+  },
+  {
+    "id": "user-aman-kushwaha",
+    "email": "amankushwaha.2301171@srec.ac.in",
+    "name": "Aman Kushwaha",
+    "password_hash": "$2b$10$jJiKYTk7JXosOgTFfspUW.JVZiWYrSG3rdCKpJqagxfGLwO0ZPA1K",
+    "email_verified": true,
+    "token_version": 1,
+    "created_at": "2026-10-01T00:00:00.000Z",
+    "theme_preference": "light"
+  },
+  {
+    "id": "user-1791357274500-lm03s",
+    "email": "alexander.new@example.com",
+    "name": "Alexander New",
+    "password_hash": "$2b$10$fUqYa5mL9AFQhl95yiuWRe1etZ3k4RNLcbma65lqBJYa3oqydqLmO",
+    "email_verified": true,
+    "token_version": 1,
+    "created_at": "2026-10-07T07:14:34.500Z"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "name": "MindGraph X - AI Knowledge Graph & Intelligence System",
+  "description": "An AI-powered personal knowledge graph and learning intelligence system with forgetting estimation, bottleneck discovery, and grounded mentoring.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
